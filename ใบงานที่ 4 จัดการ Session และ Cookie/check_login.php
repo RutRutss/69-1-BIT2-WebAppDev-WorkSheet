@@ -26,7 +26,7 @@ if ($user = mysqli_fetch_assoc($result)) {
             setcookie("remember_username", "", time() - 3600, "/");
         }
 
-        header("Location: dashboard.php");
+        header("Location: index.php");
         exit();
     }
 }
