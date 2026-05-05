@@ -60,6 +60,11 @@
         .btn-delete {
             background: #f44336;
         }
+
+        .btn-back {
+            background: #2196F3;
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -68,7 +73,8 @@
 
         <h2>ทะเบียนเรียน</h2>
 
-        <a href="add_register.php" class="btn btn-add">+ เพิ่มข้อมูล</a>
+        <a href="add_register_form.php" class="btn btn-add">+ เพิ่มข้อมูล</a>
+        <a href="index.php" class="btn btn-back">กลับหน้าหลัก</a>
 
         <table>
             <tr>
@@ -95,8 +101,8 @@
                     <td><?= $row['subject'] ?></td>
 
                     <td>
-                        <a href="edit_register.php?id=<?= $row['register_id'] ?>" class="btn btn-edit">แก้ไข</a>
-                        <a href="delete_register.php?id=<?= $row['register_id'] ?>"
+                        <a href="edit_register_form.php?id=<?= $row['register_id'] ?>" class="btn btn-edit">แก้ไข</a>
+                        <a href="controllers/delete_register.php?id=<?= $row['register_id'] ?>"
                             class="btn btn-delete">
                             ลบ
                         </a>
